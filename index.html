@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <section class="contact-form">
+      <h1>Send me a message</h1>
+      <p>use this handy contact from to get in toutch with me.</p>
+      <form>
+        <div class="input-group">
+          <input
+            type="radio"
+            id="salutation-mr"
+            name="salutation"
+            value="Mr."
+          />
+          <label for="salutation-mr" class="inline">Mr</label>
+          <input
+            type="radio"
+            name="salutation"
+            id="salutation-mrs"
+            value="Mrs."
+          />
+          <label for="salutation-mrs" class="inline">Mrs</label>
+          <input type="radio" name="salutation" id="salutation-ms" value="Ms" />
+          <label for="salutation-ms" class="inline">Ms. </label>
+        </div>
+        <div class="input-group">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="input-group">
+            <label for="email">email address</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="input-group">
+            <label for="subject">how can i help you</label>
+            <select name="subject" id="subject">
+                <option >i  have a problem</option>
+                <option >i have a general question</option>
+            </select>
+            
+        </div>
+        <div class="input-group">
+            <label for="message">Enter a message</label>
+            <textarea name="message" id="message" rows="6" cols="65"></textarea>
+        </div>
+        <div class="input-group">
+            <p class="group-label">Please send me:</p>
+            <input type="checkbox" id="snacks-pizza" name="snacks" value="pizza">
+            <label for="snacks-pizza" class="inline" >Pizza</label>
+            <input type="checkbox" id="snacks-cake" name="snacks" value="cake">
+            <label for="snacks-cake" class="inline" >cake</label>
+        </div>
+        <input type="hidden" value="najiibadn1234" name="secret">
+        <button type="submit">Send it!</button>
+      </form>
+    </section>
+    <div class="result">
+        <h2>Form data</h2>
+        <pre></pre>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
